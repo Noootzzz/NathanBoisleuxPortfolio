@@ -1,0 +1,44 @@
+/* BODY */
+ body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "leftAside main"
+    ;
+    background-color: var(--darker-blue);
+    color: var(--input);
+}
+/* MAIN */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 1fr auto;
+    grid-template-areas: 
+    "header"
+    "sections"
+    "footer"
+    ;
+    padding: 0 10vw;
+    background-color: var(--background);
+}
+
+main #sections {
+    grid-area: sections;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) auto;
+    grid-template-areas: 
+    "home"
+    "skills"
+    "projects"
+    "contact"
+    "footer"
+    ;
+}
+
+#sections section {
+    width: 100%;
+}

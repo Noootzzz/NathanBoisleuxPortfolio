@@ -1,0 +1,31 @@
+/* TABLETS */
+@media screen and (max-width: 1023px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    #sidenav {
+        display: none;
+    }
+}
+
+/* SMARTPHONES */
+@media screen and (max-width: 767px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header "
+        "main "
+        "footer "
+        ;
+    }
+    #sidenav {
+        display: none;
+    }
+}

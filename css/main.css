@@ -1,0 +1,26 @@
+/* VARIABLES */
+@import url(./variables.css);
+/* BODY / MAIN SECTION */
+@import url(./body.css);
+/* CUSTOM CURSOR */
+/* @import url(./cursor.css); */
+/* HEADER */
+@import url(./header.css);
+/* ASIDE */
+@import url(./left-aside.css);
+/* SIDENAV */
+/* @import url(./sidenav.css); */
+/* HOME SECTION */
+@import url(./home.css);
+/* ABOUT SECTION */
+/* @import url(./about.css); */
+/* SKILLS SECTION */
+@import url(./skills.css);
+/* PROJECTS SECTION */
+@import url(./projects.css);
+/* CONTACT SECTION */
+@import url(./contact.css);
+/* FOOTER SECTION */
+@import url(./footer.css);
+/* RESPONSIVE FOR MOBILE DEVICES */
+@import url(./responsive.css);

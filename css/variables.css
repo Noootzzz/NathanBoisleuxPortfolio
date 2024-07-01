@@ -1,0 +1,38 @@
+/* IMPORT DE LA FONT  : font-family: "Space Grotesk", sans-serif; DE 300 à 700*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --background: #19182F;
+  --second-background: #161529;
+  --input: #FFFFFF;
+  --primary: #E3BD04;
+  --primary-hover: #917903;
+  --secondary: #534D2D;
+  --secondary-hover: #48432895;
+  --accent: #2E2D57;
+  --second-accent: #2e2d57cb;
+  --destructive: #DF120D;
+  --radius: 0.5rem;
+
+  --outline: 2px solid #ffffff1b;
+  --outline-focus: 2px solid var(--primary);
+
+  --html-color: #e34c26;
+  --css-color: #264de4;
+  --js-color: #f7df1e;
+  --node-js-color: #3C873A;
+  --sql-color: #00758F;
+  --python-color: #FFE873;
+
+  --transition: .2s;
+
+  --font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}

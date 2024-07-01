@@ -1,0 +1,70 @@
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    grid-area: skills;
+}
+
+#skills h2 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--grey);
+}
+
+.fa-html5 {
+    color: var(--html-color);
+}
+.fa-css3-alt {
+    color: var(--css-color);
+}
+.fa-js {
+    color: var(--js-color);
+}
+.fa-node {
+    color: var(--node-js-color);
+}
+.fa-database {
+    color: var(--sql-color);
+}
+.fa-python {
+    color: var(--python-color);
+}
+
+#skills-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: 20vh;
+    width: 70%;
+}
+
+#skills-cards .card {
+    background-color: var(--second-background);
+    width: 10vw;
+    height: 15vh;
+    padding: 1rem;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    outline: var(--outline);
+    transition: .2s;
+}
+
+#skills-cards .card i {
+    font-size: 4em;
+    transition: .2s;
+}
+
+
+#skills-cards .card:hover i {
+    transform: scale(1.3);
+}

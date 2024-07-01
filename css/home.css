@@ -1,0 +1,117 @@
+#home {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding: 0 0 0 5vw;
+    grid-area: home;
+}
+
+#home-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#home-text h1 {
+    font-size: 4em;
+    text-align: left;
+    width: 100%;
+}
+
+#home-text h2 {
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#home-text h2 a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+a:focus, button:focus, input:focus, select:focus{
+    outline: var(--outline-focus);
+}
+
+#home-text #buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+#home-text #buttons a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--input);
+    background-color: var(--second-background);
+    padding: 1rem 3rem;
+    border-radius: var(--radius);
+    outline: var(--outline);
+    transition: var(--transition);
+}
+
+#home-text #buttons a:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+#home-text #buttons a:first-child {
+    color: var(--second-background);
+    background-color: var(--primary);
+}
+
+#home-text #buttons a:first-child:hover {
+    background-color: var(--primary-hover);
+}
+
+#home-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#home-image a {
+    text-decoration: none;
+    color: var(--input);
+    font-size: 1.1em;
+    background-color: var(--second-background);
+    padding: 1rem 3rem;
+    border-radius: var(--radius);
+    outline: var(--outline);
+    transition: var(--transition);
+}
+
+#home-image a:nth-child(1):hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+
+#home-image #home-email {
+    color: var(--input);
+    border: 0px;
+    background-color: var(--second-background);
+    border-radius: var(--radius);
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+#home-image #home-email:hover {
+    background-color: var(--accent);
+}
+#home-image #home-email i {
+    font-size: 1.4em;
+}

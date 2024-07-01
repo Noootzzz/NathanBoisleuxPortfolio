@@ -1,0 +1,108 @@
+#contact {
+    grid-area: contact;
+}
+
+#contact-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    outline: var(--outline);
+    background-color: var(--second-background);
+    border-radius: var(--radius);
+}
+
+#contact-elements #contact-email {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--input);
+}
+
+#contact-elements #contact-email div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+}
+
+#contact-elements #contact-email div input, #contact-email textarea {
+    border-radius: var(--radius);
+    padding: 1rem 3rem;
+    background-color: var(--background);
+    border: 0px;
+    outline: var(--outline);
+    color: var(--input);
+    width: 100%;
+}
+
+#contact-email textarea {
+    min-height: 20vh;
+}
+
+#contact-email button {
+    font-size: 1.1em;
+    color: var(--background );
+    background-color: var(--primary);
+    padding: 1rem 3rem;
+    border: 0px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 10%;
+    transition: var(--transition);
+}
+
+#contact-email button:hover {
+    background-color: var(--primary-hover);
+}
+
+#contact-elements #contact-email div input:focus, #contact-elements #contact-email textarea:focus {
+    outline: var(--outline-focus);
+}
+
+#contact-elements #contact-email div label {
+    text-align: left;
+    width: 100%;
+}
+
+#contact-elements #contact-infos {
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-elements #contact-infos h3, #contact-infos a {
+    text-decoration: none;
+    color: var(--input);
+    font-size: 1.1em;
+    background-color: var(--second-background);
+    outline: var(--outline);
+    padding: 1rem 3rem;
+    border-radius: var(--radius);
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;    
+    transition: var(--transition);
+}
+
+#contact-infos a:hover {
+    background-color: var(--accent);
+}
+
+#contact-infos i {
+    font-size: 1.5em;
+    color: var(--primary);
+}
