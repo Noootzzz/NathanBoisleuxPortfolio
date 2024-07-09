@@ -24,6 +24,12 @@
 }
 
 @media screen and (max-width: 1150px) {
+    body #mobile-header {
+        display: flex;
+    }
+    body header {
+        display: none;
+    }
     body {
         grid-template-areas: 
         "mobileHeader"
@@ -31,9 +37,7 @@
         "footer"
         ;
     }
-    body header {
-        display: none;
-    }
+    
     body main {
         padding: 3rem;
     }

@@ -48,6 +48,7 @@ header nav .nav-link:hover a {
 
 /* MOBILE HEADER */
 #mobile-header {
+    display: none;
     grid-area: mobileHeader;
     height: 10rem;
     width: 100%;
