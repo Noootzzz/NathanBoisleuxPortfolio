@@ -26,7 +26,7 @@
 @media screen and (max-width: 1150px) {
     body {
         grid-template-areas: 
-        "mobileHeader"/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+        "mobileHeader"
         "main"
         "footer"
         ;
@@ -156,7 +156,8 @@
         font-size: 1em;
     }
     #skills-cards .card {
-        width: 25vw;
+        width: 45vw;
+        height: 10rem;
         justify-content: center;
     }
 
@@ -166,11 +167,11 @@
 
     }
     #projects #projects-list .project{
-        width: 45%;
-        font-size: .8em;
+        width: 95%;
+        font-size: 1em;
     }
     #projects #projects-list .project .skills-used {
-        font-size: .7em;
+        font-size: 1em;
     }
 
     #contact {
@@ -188,5 +189,11 @@
     #contact #contact-elements #contact-infos {
         width: 100%;
         padding: 0 0 2rem 0;
+    }
+    #home, #skills, #projects, #contact {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+        padding: 1rem;
     }
 }

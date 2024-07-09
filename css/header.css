@@ -43,3 +43,13 @@ header nav .nav-link:hover a {
     color: var(--primary);
     transform: translateY(-10px);
 }
+
+
+
+/* MOBILE HEADER */
+#mobile-header {
+    grid-area: mobileHeader;
+    height: 10rem;
+    width: 100%;
+    background-color: red;
+}
