@@ -1,34 +1,192 @@
 /*
   * Author: Nathan Boisleux 2024 *
 */
-/* TABLETS */
-@media screen and (max-width: 1023px) {
-    body {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer"
-        ;
-    }
-    #sidenav {
-        display: none;
-    }
-}
-
-/* SMARTPHONES */
-@media screen and (max-width: 767px) {
+/* MEDIUM */
+@media screen and (max-width: 1380px) {
     body {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas: 
-        "header "
-        "main "
-        "footer "
+        "header"
+        "main"
+        "footer"
         ;
     }
-    #sidenav {
+    body #left-aside  {
         display: none;
+    }
+
+    #contact-elements #contact-infos h3, #contact-elements #contact-infos a {
+        width: 80%;
+        font-size: .8em;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    body {
+        grid-template-areas: 
+        "mobileHeader"/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+        "main"
+        "footer"
+        ;
+    }
+    body header {
+        display: none;
+    }
+    body main {
+        padding: 3rem;
+    }
+    /* HOME SECTION */
+    main #home {
+        padding: 0;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    #home #home-image {
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+        gap: 1rem;
+    }
+    #home #home-text {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        gap: 2rem;
+    }
+    #home-text h1, #home-text h2 {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    #home-text #buttons {
+        justify-content: center;
+    }
+    #home #home-image  img {
+        width: 20%;
+    }
+    #home-image a {
+        font-size: .8em;
+        padding: 1rem 1rem;
+    }
+
+    /* SKILLS SECTION */
+    #skills {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+    #skills-cards {
+        width: 80%;
+    }
+    #skills-cards .card {
+        width: 20vw;
+        height: 20vh;
+    }
+    /* PROJECTS SECTION */
+    #projects #projects-list .project{
+        width: 35%;
+        height: 25rem;
+        font-size: .8em;
+    }
+    .skills-used {
+        gap: .7rem;
+    }
+    #projects-list .demo-links {
+        padding: .2rem;
+        min-height: 5rem;
+    }
+    #projects-list .demo-links a {
+        padding: 1rem;
+    }
+
+    /* CONTACT SECTION */
+    #contact-elements {
+        padding: 3rem 0;
+    }
+    #contact-elements #contact-infos {
+        height: 100%;
+        justify-content: center;  
+        gap: 2rem;
+    }
+    #contact-elements #contact-email {
+        width: 50%;
+        
+    }
+    #contact-elements #contact-infos h3, #contact-elements #contact-infos a {
+        width: 80%;
+        font-size: .8em;
+        justify-content: center;
+    }
+    #contact-elements textarea {
+        min-height: 10vh;
+    }
+}   
+
+/* LITTLE */
+@media screen and (max-width: 768px) {
+    body main {
+        padding: .5rem;
+    }
+    body main h2 {
+        font-size: 2em;
+    }
+    #home h1 {
+        font-size: 3em;
+        padding: 0;
+    }
+    body #home h2 {
+        font-size: 1em;
+    }
+    #home #home-text {
+        height: 25%;
+    }
+    #home #home-text #buttons a {
+        cursor: pointer;
+        padding: 1rem 1rem;
+        font-size: 1em;
+    }
+    #home #home-image {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #skills-cards .card h3 {
+
+        font-size: 1em;
+    }
+    #skills-cards .card {
+        width: 25vw;
+        justify-content: center;
+    }
+
+    #projects-list {
+        flex-wrap: wrap;
+        gap: 2rem;
+
+    }
+    #projects #projects-list .project{
+        width: 45%;
+        font-size: .8em;
+    }
+    #projects #projects-list .project .skills-used {
+        font-size: .7em;
+    }
+
+    #contact {
+        padding: 4rem 0;
+    }
+
+    #contact #contact-elements {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #contact #contact-elements #contact-email {
+        border-right: 0px;
+        width: 100%;
+    }
+    #contact #contact-elements #contact-infos {
+        width: 100%;
+        padding: 0 0 2rem 0;
     }
 }
