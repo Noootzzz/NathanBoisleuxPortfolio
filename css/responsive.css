@@ -73,6 +73,7 @@
 
     /* SKILLS SECTION */
     #skills {
+        padding-top: -40vh;
         flex-direction: column;
         justify-content: flex-start;
         gap: 4rem;
@@ -128,9 +129,13 @@
 @media screen and (max-width: 768px) {
     body main {
         padding: .5rem;
+       
     }
     body main h2 {
         font-size: 2em;
+    }
+    body #home{
+        margin-top: -15vh;
     }
     #home h1 {
         font-size: 3em;
@@ -151,20 +156,36 @@
         flex-direction: column;
         gap: 2rem;
     }
+    #home #home-image a {
+        font-size: .8em;
+        padding: 1rem 1rem;
+    }
+    #home #home-image img {
+        width: 50%;
+    }
+    #skills {
+        margin-top: -30vh;
+    }
     #skills-cards .card h3 {
-
         font-size: 1em;
     }
+    #skills-cards {
+        width: 100%;
+        gap: 10%;
+    }
     #skills-cards .card {
-        width: 45vw;
+        width: 35%;
+        margin: 0 0 2rem 0;
         height: 10rem;
         justify-content: center;
     }
-
+    #projects {
+        margin-top: -55vh;
+    }
     #projects-list {
         flex-wrap: wrap;
         gap: 2rem;
-
+        
     }
     #projects #projects-list .project{
         width: 95%;
@@ -190,10 +211,10 @@
         width: 100%;
         padding: 0 0 2rem 0;
     }
-    #home, #skills, #projects, #contact {
+    /* #home, #skills, #projects, #contact {
         width: 100%;
         overflow-x: hidden;
         margin: 0 auto;
         padding: 1rem;
-    }
+    } */
 }
