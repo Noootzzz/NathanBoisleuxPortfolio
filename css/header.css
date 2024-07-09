@@ -50,7 +50,51 @@ header nav .nav-link:hover a {
 #mobile-header {
     display: none;
     grid-area: mobileHeader;
-    height: 10rem;
+    height: 5rem;
     width: 100%;
+    background-color: var(--accent);
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    color: var(--input);  
+    z-index: 1000;
+}
+
+#mobile-header #menu {
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+#mobile-header h2 {
+    color: var(--input);  
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#mobile-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#mobile-header li i {
+    color: var(--input);    
+    font-size: 1.3em;
+}
+
+#mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
     background-color: red;
+    transition: .3s ease-in-out;
+}
+
+#mobile-header:hover #mobile-nav {
+    width: 100%;
 }
