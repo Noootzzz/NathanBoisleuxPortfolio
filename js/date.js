@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 //year for the footer
 let year = new Date().getFullYear()
 let copyright = document.createElement("h4")
