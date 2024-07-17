@@ -117,9 +117,9 @@ header nav .nav-link:hover a {
     cursor: pointer;
     padding: 1rem;
     border-radius: var(--radius);
-    width: 20%;
     border: var(--outline);
     transition: var(--transition);
+    width: 50%;
 }
 
 #mobile-nav ul li:hover {
