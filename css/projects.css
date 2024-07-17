@@ -35,7 +35,7 @@
     transition: var(--transition);
 }
 
-#projects-list .project .see-more-project { 
+#projects-list .project .see-more-project {
     display: flex;
     margin: 10px;
     width: 100%;
@@ -49,7 +49,8 @@
     transition: var(--transition);
 }
 
-#projects-list .project .see-more-project h4, .see-more-project p {
+#projects-list .project .see-more-project h4,
+.see-more-project p {
     background-color: var(--accent);
     opacity: 0;
     transform: translateY(-10px);
@@ -59,6 +60,7 @@
     text-align: center;
     border-radius: 0 0 var(--radius) var(--radius);
 }
+
 #projects-list .project .see-more-project h4 {
     font-size: 1.7rem;
     border-radius: var(--radius) var(--radius) 0 0;
@@ -87,10 +89,12 @@
 
 #projects-list .demo-links a:hover {
     background-color: var(--second-background);
-} 
+}
 
 
-#projects-list .project .see-more-project:hover h4, #projects-list .project .see-more-project:hover p, #projects-list .project .see-more-project:hover  {
+#projects-list .project .see-more-project:hover h4,
+#projects-list .project .see-more-project:hover p,
+#projects-list .project .see-more-project:hover {
     background-color: var(--second-accent);
     opacity: 1;
     transform: translateY(0px);
@@ -121,18 +125,23 @@
 .skills-used .skill-span:nth-child(1) {
     border-color: var(--html-color);
 }
+
 .skills-used .skill-span:nth-child(2) {
     border-color: var(--css-color);
 }
+
 .skills-used .skill-span:nth-child(3) {
     border-color: var(--js-color);
 }
+
 .skills-used .skill-span:nth-child(4) {
     border-color: var(--node-js-color);
 }
+
 .skills-used .skill-span:nth-child(5) {
     border-color: var(--sql-color);
 }
+
 .skills-used .skill-span:nth-child(6) {
     border-color: var(--python-color);
 }
