@@ -119,6 +119,7 @@ header nav .nav-link:hover a {
     border-radius: var(--radius);
     border: var(--outline);
     transition: var(--transition);
+    width: 50%;
 }
 
 #mobile-nav ul li:hover {
