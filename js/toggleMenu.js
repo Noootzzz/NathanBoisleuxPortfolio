@@ -5,3 +5,8 @@ menu.addEventListener("click", () => {
     menucontent.classList.toggle("hidden");
     menu.textContent == "Close" ? menu.textContent = "Menu" : menu.textContent = "Close"
 })
+
+menucontent.addEventListener("click", () => {
+    menucontent.classList.toggle("hidden");
+    menu.textContent == "Close" ? menu.textContent = "Menu" : menu.textContent = "Close"
+})
