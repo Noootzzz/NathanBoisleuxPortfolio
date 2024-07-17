@@ -6,17 +6,19 @@
     body {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
         ;
     }
-    body #left-aside  {
+
+    body #left-aside {
         display: none;
     }
 
-    #contact-elements #contact-infos h3, #contact-elements #contact-infos a {
+    #contact-elements #contact-infos h3,
+    #contact-elements #contact-infos a {
         width: 80%;
         font-size: .8em;
         justify-content: center;
@@ -27,20 +29,23 @@
     body #mobile-header {
         display: flex;
     }
+
     body header {
         display: none;
     }
+
     body {
-        grid-template-areas: 
-        "mobileHeader"
-        "main"
-        "footer"
+        grid-template-areas:
+            "mobileHeader"
+            "main"
+            "footer"
         ;
     }
-    
+
     body main {
         padding: 3rem;
     }
+
     /* HOME SECTION */
     main #home {
         padding: 0;
@@ -48,28 +53,35 @@
         height: 100%;
         width: 100%;
     }
+
     #home #home-image {
         flex-direction: row;
         width: 100%;
         height: 50%;
         gap: 1rem;
     }
+
     #home #home-text {
         width: 100%;
         height: 50%;
         text-align: center;
         gap: 2rem;
     }
-    #home-text h1, #home-text h2 {
+
+    #home-text h1,
+    #home-text h2 {
         text-align: center;
         padding: 0 2rem;
     }
+
     #home-text #buttons {
         justify-content: center;
     }
-    #home #home-image  img {
+
+    #home #home-image img {
         width: 20%;
     }
+
     #home-image a {
         font-size: .8em;
         padding: 1rem 1rem;
@@ -82,26 +94,32 @@
         justify-content: flex-start;
         gap: 4rem;
     }
+
     #skills-cards {
         width: 80%;
     }
+
     #skills-cards .card {
         width: 20vw;
         height: 20vh;
     }
+
     /* PROJECTS SECTION */
-    #projects #projects-list .project{
+    #projects #projects-list .project {
         width: 35%;
         height: 25rem;
         font-size: .8em;
     }
+
     .skills-used {
         gap: .7rem;
     }
+
     #projects-list .demo-links {
         padding: .2rem;
         min-height: 5rem;
     }
+
     #projects-list .demo-links a {
         padding: 1rem;
     }
@@ -110,94 +128,117 @@
     #contact-elements {
         padding: 3rem 0;
     }
+
     #contact-elements #contact-infos {
         height: 100%;
-        justify-content: center;  
+        justify-content: center;
         gap: 2rem;
     }
+
     #contact-elements #contact-email {
         width: 50%;
-        
+
     }
-    #contact-elements #contact-infos h3, #contact-elements #contact-infos a {
+
+    #contact-elements #contact-infos h3,
+    #contact-elements #contact-infos a {
         width: 80%;
         font-size: .8em;
         justify-content: center;
     }
+
     #contact-elements textarea {
         min-height: 10vh;
     }
-}   
+}
 
 /* LITTLE */
 @media screen and (max-width: 768px) {
     body main {
         padding: .5rem;
-       
+        padding-top: 3rem;
     }
+
     body main h2 {
         font-size: 2em;
     }
-    body #home{
+
+    body #home {
         margin-top: -15vh;
     }
+
     #home h1 {
         font-size: 3em;
         padding: 0;
     }
+
     body #home h2 {
         font-size: 1em;
     }
+
     #home #home-text {
         height: 25%;
     }
+
     #home #home-text #buttons {
         flex: 1;
     }
+
     #home #home-text #buttons a {
         cursor: pointer;
         padding: 1rem 1rem;
         font-size: 1em;
     }
+
     #home #home-image {
         flex-direction: column;
         gap: 2rem;
     }
+
     #home #home-image a {
         font-size: .8em;
         padding: 1rem 1rem;
     }
+
     #home #home-image img {
         width: 50%;
     }
+
     #skills {
         margin-top: -30vh;
     }
+
     #skills-cards .card h3 {
         font-size: 1em;
     }
+
     #skills-cards {
         width: 100%;
         gap: 10%;
     }
+
     #skills-cards .card {
         width: 35%;
         margin: 0 0 2rem 0;
         height: 10rem;
         justify-content: center;
     }
+
     #projects {
         margin-top: -55vh;
     }
+
     #projects-list {
         flex-wrap: wrap;
         gap: 2rem;
-        
+
     }
-    #projects #projects-list .project{
+
+    #projects #projects-list .project {
         width: 95%;
         font-size: 1em;
     }
+
     #projects #projects-list .project .skills-used {
         font-size: 1em;
     }
@@ -210,14 +251,17 @@
         flex-direction: column-reverse;
         height: auto;
     }
+
     #contact #contact-elements #contact-email {
         border-right: 0px;
         width: 100%;
     }
+
     #contact #contact-elements #contact-infos {
         width: 100%;
         padding: 0 0 2rem 0;
     }
+
     /* #home, #skills, #projects, #contact {
         width: 100%;
         overflow-x: hidden;
