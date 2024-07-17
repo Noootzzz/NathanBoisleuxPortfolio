@@ -1,4 +1,6 @@
-// INIT
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 emailjs.init({
     publicKey: "2JUeGqMhK9uykWuEA",
   })

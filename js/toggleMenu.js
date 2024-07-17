@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 const menu = document.querySelector("#menu")
 const menucontent = document.querySelector("#mobile-nav")
 
