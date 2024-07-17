@@ -151,6 +151,9 @@
     #home #home-text {
         height: 25%;
     }
+    #home #home-text #buttons {
+        flex: 1;
+    }
     #home #home-text #buttons a {
         cursor: pointer;
         padding: 1rem 1rem;

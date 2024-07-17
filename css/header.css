@@ -52,7 +52,7 @@ header nav .nav-link:hover a {
     grid-area: mobileHeader;
     height: 5rem;
     width: 100%;
-    background-color: var(--accent);
+    background-color: var(--second-background);
     position: fixed;
     align-items: center;
     justify-content: space-between;
@@ -62,8 +62,9 @@ header nav .nav-link:hover a {
 }
 
 #mobile-header #menu {
+    font-weight: bold;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 #mobile-header h2 {
@@ -87,14 +88,49 @@ header nav .nav-link:hover a {
 
 #mobile-nav {
     position: absolute;
-    top: 0;
+    top: 5rem;
     left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: red;
-    transition: .3s ease-in-out;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition) ease-in-out;
 }
 
-#mobile-header:hover #mobile-nav {
+#mobile-header #mobile-nav.hidden {
+    left: -100rem;
+}
+
+#mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
+}
+
+#mobile-nav ul li {
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: var(--radius);
+    width: 20%;
+    border: var(--outline);
+    transition: var(--transition);
+}
+
+#mobile-nav ul li:hover {
+    border: var(--outline-focus);
+}
+
+#mobile-nav ul li a {
+    text-decoration: none;
+    color: var(--input);
+}
+
+#mobile-header #menu-h2 {
+    color: var(--primary);
 }
